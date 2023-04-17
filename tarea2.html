@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" content="Mi primer Formulario">
+    <meta name="author" content="Jennifer Bellott">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="formulario,Bellott">
+    
+    <title>Formulario Jennifer Bellott</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="envio.php" method="post" target="_blank"></form>
+    <p>
+        <label for="nombre"> <strong>Nombre:</strong></label>
+        <input type="text" id="nombre" size="40" name="nombre"
+        placeholder="Introduce tu nombre" required>
+        <small>Obligatorio</small>
+        
+    </p>
+<p>
+    <label for="contraseña"> <strong>Contraseña:</strong></label>
+    <input type="password" id="password" size="40"
+    name="contraseña" placeholder="Introduce tu contraseña" maxlength="10" minlength="4">
+</p>
+<p>
+    <label for="correo">Correo</label>
+    <input type="email" id="correo" name="correo">
+</p>
+<p>
+    <label for="numero">Número</label>
+    <input type="number" id="numero" name="numero"
+    min="1" max="50" step="1">
+</p>
+<p>
+    <input type="submit" value="Enviar datos">
+    <input type="reset" value="Resetear datos">
+</p> 
+<br>
+<label for="País">País de nacimiento:</label>
+<select name="País" id="País">
+    <optgroup label="América">
+    <option value="----">----</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Brasil">Brasil</option>
+    <option value="Perú">Perú</option>
+    <option value="Chile">Chile</option>
+    <option value="Bolivia">Bolivia</option>
+    </optgroup>
+    <optgroup label="Europa">
+        <option value="----">----</option>
+        <option value="España">España</option>
+        <option value="Italia">Italia</option>
+        <option value="Francia">Francia</option>
+    </optgroup>
+    
+    </select>
+<br>
+<br>
+<p><label for="genero">Género:</label>
+<input type="radio" name="genero" value="Hombre"> Hombre
+<input type="radio" name="genero" value="Mujer"> Mujer
+</p>
+<label for="Idioma">Selecciona tu/tus idioma/idiomas:</label>
+<p>
+    <input type="checkbox" name="Idioma" value="Español"> Español
+    <input type="checkbox" name="Idioma" value="Ingles"> Inglés
+    <input type="checkbox" name="Idioma" value="Portugues"> Portugues
+    <input type="checkbox" name="Idioma" value="Frances"> Francés
+
+</p>
+<p> <label for="fecha">Fecha de nacimiento</label>
+<input type="date" id="fecha" name="fecha" max="2023-04-16">
+</p>
+<p>
+    <label for="observaciones">Observaciones</label>
+    <textarea name="Observaciones" id="observaciones" cols="50" rows="10"></textarea>
+</p>
+<div style="margin-top: 5px;">
+    <label for="archivo"><strong>Archivo</strong></label>
+    <input type="file" name="archivo" id="archivo">
+
+</div>
+
+
+</body>
+</html>
